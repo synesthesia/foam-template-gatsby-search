@@ -10,7 +10,6 @@
 
 .inputWrapper .searchIcon {
   position: absolute;
-  stroke: var(--link);
   fill: var(--link);
   left: 2px;
   height: 34px;
@@ -21,7 +20,7 @@
 .inputWrapper input {
   color: var(--text);
   border: none;
-  border-bottom: 2px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
   height: 36px;
   padding-left: 28px;
   background-color: var(--note-bg);
@@ -30,7 +29,7 @@
 
 .inputWrapper input:focus {
   outline: none;
-  border-bottom: 2px solid var(--link);
+  border-bottom: 1px solid var(--link);
 }
 
 .results {
@@ -85,5 +84,27 @@
     max-width: 100%;
     overflow-x: hidden;
     word-break: break-all;
+  }
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  left: calc(50% - 32px);
+  position: relative;
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid var(--separator);
+  border-color: var(--separator) transparent var(--separator) transparent;
+  animation: lds-dual-ring 1.2s ease-in-out infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

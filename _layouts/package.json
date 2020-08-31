@@ -5,13 +5,13 @@
   "version": "1.0.0",
   "dependencies": {
     "downshift": "^6.0.3",
+    "flexsearch": "^0.6.32",
     "gatsby": "^2.23.18",
-    "gatsby-plugin-local-search": "^1.1.1",
+    "gatsby-plugin-local-search": "^2.0.0",
     "gatsby-plugin-manifest": "^2.4.23",
     "gatsby-theme-garden": "^0.1.44",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-use-flexsearch": "^0.1.1"
+    "react-dom": "^16.3.1"
   },
   "keywords": [
     "foam"

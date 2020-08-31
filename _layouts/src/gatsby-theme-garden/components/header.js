@@ -17,10 +17,10 @@ const Header = () => {
         <h3>{siteMetadata.title}</h3>
       </Link>
       <div className="controls">
+        <Search />
         <GraphButton />
         <DarkModeToggle />
       </div>
-      <Search />
     </header>
   );
 };
